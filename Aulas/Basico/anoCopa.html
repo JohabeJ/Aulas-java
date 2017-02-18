@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+
+    function pulaLinha() 
+    {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha()
+    }
+
+    var anoCopa = parseInt(prompt("Qual a data inicial??"));
+    var limite =parseInt(prompt("Qual o ano limite??"));
+
+    while(anoCopa <= 2014)
+    {
+    	mostra(anoCopa + "Tem Copa!!");
+    	anoCopa = anoCopa + 4;
+    	pulaLinha()
+    	mostra(anoCopa + "esse é o valora da soma")
+    }
+
+    mostra("Ufa! esses foram os anos que tiveram copa até " + limite);
+</script>

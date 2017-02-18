@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<input/>
+
+<button>Compare como número que estou pensando!</button>
+
+<script>
+
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase)
+    {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function verifica()
+
+    {
+    	if(segredo == input.value)
+    	{
+    		alert("Acertou Mizeravi")
+    	}
+    	else
+    	{
+    		alert("Errou Carniça");
+    	}
+    	input.value = "";
+    	input.focus();
+    }
+    
+    var segredo = Math.round(Math.random()*10);
+    var input = document.querySelector("input");
+    input.focus();
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+</script>

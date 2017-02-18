@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() 
+    {
+        document.write("<br>");
+    }
+
+    function mostra(frase)
+    {
+        document.write(frase);
+        pulaLinha()
+    }
+
+    peso = parseInt(prompt("Digite seu peso"))
+    altura = prompt("Digite sua altura")
+    imc1 = altura*altura
+    imc2 = peso / imc1
+
+    mostra(imc2)
+
+    </script>

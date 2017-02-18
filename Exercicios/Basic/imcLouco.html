@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testaIMC</title>
+
+</head>
+<body>
+
+
+<h1>Testando IMC </h1>
+<script>
+    function pulaLinha() 
+    {
+        document.write("<br>");
+    }
+
+    function mostra(frase)
+    {
+        document.write(frase);
+        pulaLinha()
+    }
+
+    function calculaImc(peso,altura)
+    {
+         imc = peso/(altura*altura)
+         return imc;
+
+    }
+   	var peso = parseInt(prompt("Digite seu peso"))
+    var altura = prompt("Digite a altura");
+
+
+    
+
+    var imc = calculaImc(peso, altura);
+
+    if (imc < 18.5)
+    {
+        mostra("seu IMC de " + imc + " indica que vc está abaixo do peso");
+    }
+    if (imc > 35 )
+    {
+        mostra("seu IMC de " + imc + " indica que vc está acima do peso ideal");
+    }
+
+    if (imc >= 18.5 && imc <= 35)
+
+    {
+        mostra("OK!, seu IMC de " + imc + " indica que vc está entre os 2 limites!")
+    }
+
+</script>
+</body>
+</html>
