@@ -1,0 +1,9 @@
+Sempre usar o cmd da pasta onde estão os arquivos.
+
+git status => para localizar os arquivos da pasta.
+
+git add . => para adicionar todas os arquivos da pasta selecionada 
+
+git commit -m "Digite aqui a mensagem a ser comitada" => para enviar 
+
+git push => para enviar o arquivo para o git hub
