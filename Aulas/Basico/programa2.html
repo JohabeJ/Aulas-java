@@ -1,21 +1,34 @@
-<canvas id="tela" width="600" height="400"></canvas>
+<canvas width="600" heigth="400"></canvas>
 
-<script>
-    function desenhaQuadradoVerde(x,y, cor) {
-        var tela = document.querySelector('canvas');
-        var pincel = tela.getContext('2d');
+ <Script>
 
-        pincel.fillStyle = cor;
-        pincel.fillRect(x, y, 50, 50);
-       	pincel.strokeStyle='black';
-       	pincel.strokeRect(x,y,50,50);
+ 		var tela = document.querySelector('canvas');
+ 		var pincel = tela.getContext('2d');
 
-    };
+ 	function desenhaQuadradoVerde(x,y,cor)
+ 	{
+ 		
+ 		pincel.fillStyle = cor;
+ 		pincel.fillRect(x,y,50,50);
+ 		pincel.fillStroke = 'black';
+ 		pincel.strokeRect(x,y,50,50);
 
-    desenhaQuadradoVerde(0,0, 'green');
-    desenhaQuadradoVerde(50,0, 'gray');
-    desenhaQuadradoVerde(100,0, 'red');
-    desenhaQuadradoVerde(150,0, 'yellow');
-    desenhaQuadradoVerde(200,0, 'pink');
-    desenhaQuadradoVerde(250,0,'darkblue');
-</script>
+
+ 	}
+ 	 	pincel.fillStyle = 'green'
+ 	pincel.beginPath();
+	pincel.moveTo(230,50);
+	pincel.lineTo(400,190);
+	pincel.lineTo(50,190);
+	pincel.fill();
+
+ 	
+ 	desenhaQuadradoVerde(0,0,'black');
+ 	desenhaQuadradoVerde(50,0,'yellow');
+ 	desenhaQuadradoVerde(100,0,'white');
+ 	desenhaQuadradoVerde(150,0,'green');
+ 	desenhaQuadradoVerde(0,50,'grey')
+
+
+ </Script>
+
